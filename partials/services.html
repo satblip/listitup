@@ -1,0 +1,124 @@
+<section ng-controller="ServicesCtrl">
+
+<!--     <div class="loader" ng-show="loader"></div>
+    <a class="back" ng-hide="panel==0" ng-click="panel=0"></a> -->
+
+    <section
+        class="panel panel-padding cssFade angular-animate"
+        ng-hide="servicesPanel!=0">
+
+        <div id="service_line1">
+            <div class="circle" ng-click="panelServiceBasic()">
+                <span class="circle-content"></span>
+                <span class="logo_service services_logo-1 glyphicon glyphicon-phone-alt"></span>
+                <span class="text_service services_text-1">Basic Services</span>
+            </div>
+            <div class="circle" ng-click="panelServiceClassic()">
+                <span class="circle-content"></span>
+                <span class="logo_service services_logo-2 glyphicon glyphicon-tag"></span>
+                <span class="text_service services_text-2">Classic Services</span>
+            </div>
+            <div class="circle" ng-click="panelServiceMaid()">
+                <span class="circle-content"></span>
+                <span class="logo_service services_logo-3 glyphicon glyphicon-home"></span>
+                <span class="text_service services_text-3">Maid Services</span>
+            </div>
+            <div class="circle" ng-click="panelServicePrivate()">
+                <span class="circle-content"></span>
+                <span class="logo_service services_logo-4 glyphicon glyphicon-plane"></span>
+                <span class="text_service services_text-4">Private service</span>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="panel panel-padding cssFade angular-animate"
+        ng-hide="servicesPanel!=1">
+
+        <p class="service-title">Basic Services Informations</p>
+        <div class='inside'>
+            <p><strong>Important telephone numbers</strong><br>
+            - Police : {{ info.phonePolice }}<br>
+            - Fireman : {{ info.phoneFiremen }}<br>
+            - Concierge : <a href="tel:{{ info.phoneConcierge }}">{{ info.phoneConcierge }}</a><br>
+            </p>
+            <p><strong>Wifi information</strong><br>
+            - Name : {{ info.wifiName }}<br>
+            - Password : {{ info.wifiPass }}<br>
+            </p>
+            <p><strong>Maid schedule</strong><br>
+            - Day : {{ info.maidNextDay }}<br>
+            - Time : {{ info.maidNextTime }}<br>
+            - Phone Number : <a href="tel:{{ info.maidPhoneNumber }}">{{ info.maidPhoneNumber }}</a>
+            </p>
+        </div>
+    </section>
+
+    <section
+        class="panel panel-padding cssFade angular-animate"
+        ng-hide="servicesPanel!=2">
+        <p>Choose your service</p>
+        <select class="input-services-selector">
+          <option value="post">Post service</option>
+          <option value="laundry">Laundry service</option>
+          <option value="sewing">Sewing service</option>
+          <option value="shoe">Shoe repair</option>
+        </select><br>
+        <p>Type your request</p>
+        <textarea class="input-services" rows="15"></textarea>
+        <button type="button" class="btn btn-default button-on-right button-contact-form" ng-click="processServiceClassicRequest()">Send</button> 
+    </section>
+
+    <section
+        class="panel panel-padding cssFade angular-animate"
+        ng-hide="servicesPanel!=3">
+        
+        <p>Maid Services</p>
+        <p>Your next maid service is planned on the :</br>
+        <strong>{{ info.maidNextDate }}</strong></p>
+        <section ng-show="maidPanel==0"></br>
+            <button type="button" class="btn btn-default button-on-right" ng-click="panelServiceMaidAddDate()">Add an extra date</button></br></br></br></br>
+            <button type="button" class="btn btn-default button-on-right" ng-click="panelServiceMaidChangeDay()">Change the day</button>    
+        </section>
+        <section class="cssFade angular-animate" ng-show="maidPanel==1">
+            <label>Date</label>
+            <input class="input-services" id='maidNewDate' size="16" type="date" placeholder="Type the date">
+            <label>Time</label>
+            <input class="input-services" id='maidNewTime' size="16" type="time" placeholder="Type the time">
+            <button type="button" class="btn btn-default button-on-right button-maid-form" ng-click="processServiceMaidAddDate()">Send</button> 
+        </section>
+        <section class="cssFade angular-animate" ng-show="maidPanel==2">
+            <label>New day</label>
+            <select class="input-services-selector" value="{{ info.maidNextDay }}" id='maidNewDay'>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+            <label>New time</label>
+            <input id='maidNewTime' class="input-services" value="{{ info.maidNextTime }}" size="16" type="time">
+            <button type="button" class="btn btn-default button-on-right button-maid-form" ng-click="processServiceMaidChangeDay()">Send</button> 
+        </section>
+    </section>
+
+    <section
+        class="panel panel-padding cssFade angular-animate"
+        ng-hide="servicesPanel!=4">
+        <p>Choose your service</p>
+        <select class="input-services-selector">
+            <option value="event">Event planning</option>
+            <option value="travel">Travel</option>
+            <option value="reservation">Reservation</option>
+            <option value="babysitting">Babysitting</option>
+            <option value="schools">Schools</option>
+            <option value="pets">Pets services</option>
+            <option value="shopping">Personal shopping</option>
+            <option value="car">Car service</option>
+        </select><br>
+        <p>Type your request</p>
+        <textarea class="input-services" rows="15"></textarea>
+        <button type="button" class="btn btn-default button-on-right button-contact-form" ng-click="processServiceprivateRequest()">Send</button> 
+    </section>
+
+</section>

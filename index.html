@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <title>Royal Tervuren</title>
+    </head>
+    <body>
+        <header class="header">
+        </header>
+
+        <section class="view view-fade angular-animate" ng-view>
+        </section>
+
+        <nav class="nav" ng-controller="NavCtrl">
+            <a href="#news" ng-click="navAction('news')"><i class="icon icon-news" ng-class="{iconactive: menu=='news'}" disableAnimate><p>News</p></i></a>
+            <a href="#services" ng-click="navAction('services')"><i class="icon icon-services" ng-class="{iconactive: menu=='services'}" disableAnimate><p>Services</p></i></a>
+            <a href="#repairs" ng-click="navAction('repairs')"><i class="icon icon-repairs" ng-class="{iconactive: menu=='repairs'}" disableAnimate><p>Repairs</p></i></a>
+            <a href="#contact" ng-click="navAction('contact')"><i class="icon icon-contact" ng-class="{iconactive: menu=='contact'}" disableAnimate><p>Contact</p></i></a>
+            <a href="#settings" ng-click="navAction('settings')"><i class="icon icon-settings" ng-class="{iconactive: menu=='settings'}" disableAnimate><p>Settings</p></i></a>
+        </nav>
+
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-animate.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller/ServicesCtrl.js"></script>
+        <script src="js/controller/NavCtrl.js"></script>
+        <script src="js/controller/NewsCtrl.js"></script>
+    </body>
+</html>

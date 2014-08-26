@@ -1,0 +1,601 @@
+/* Satprod */
+.icon {
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  margin-left: 13px;
+  height: 32px;
+  width: 32px;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-filter: opacity(50%);
+  -webkit-transform: translate3d(0px,-2px,0px);
+}
+
+.iconactive {
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  margin-left: 13px;
+  height: 32px;
+  width: 32px;
+  -webkit-filter: opacity(100%);
+  -webkit-transform: translate3d(0px,-2px,0px);
+}
+
+.ng-show{
+  -webkit-transition: opacity 1s ease-out;
+}
+
+.icon p{
+  bottom: -30px;
+  position: absolute;
+  font-size: 12px;
+  color: #000000;
+  -webkit-transform: translate3d(0px,5px,0px);
+}
+
+.icon-news {
+  background-image: url('img/icons/icons_news@2x.png');
+}
+
+.icon-news p {
+  margin-left: -6px;
+}
+
+.icon-services {
+  background-image: url('img/icons/icons_services@2x.png');
+}
+
+.icon-services p {
+  margin-left: -13px;
+}
+
+.icon-repairs {
+  background-image: url('img/icons/icons_repairs@2x.png');
+}
+
+.icon-repairs p {
+  margin-left: -11px;
+}
+
+.icon-contact {
+  background-image: url('img/icons/icons_contact@2x.png');
+}
+
+.icon-contact p {
+  margin-left: -11px;
+}
+
+.icon-settings {
+  background-image: url('img/icons/icons_settings@2x.png');
+}
+
+.icon-settings p {
+  margin-left: -12px;
+}
+
+/* News */
+
+.news_content{
+  padding-bottom: 5px; 
+}
+
+.news_date{
+  font-size: 10px;
+  margin-top: -4px !important;
+  float: right;
+}
+
+.button-on-right{
+  position: absolute;
+  right: 15px;
+}
+
+.button-contact-form{
+  top: 310px;
+}
+
+.button-maid-form{
+  top: 270px;
+}
+
+/* GA */
+
+.icon-sprite, .icon-about, .icon-clear, .icon-clouds-big, .icon-clouds, .icon-home, .icon-rain, .row_active i {
+  background-image: url('img/icon-sf81fe3aabe.png');
+  background-repeat: no-repeat; }
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input, textarea {
+  border: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+
+/*------------------------------------*\
+    $GENERIC
+\*------------------------------------*/
+body {
+  color: #112348;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  background-color: #F8F8F8; }
+
+i {
+  display: inline-block; }
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin: 45px 0;
+  display: none; }
+
+p {
+  color: #112348;
+  margin: 1em 0px;
+  overflow: hidden;
+  *zoom: 1; }
+
+input.text {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #1f253d;
+  background-color: #4f597b;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+  input.text:focus {
+    border: 1px solid #11a7ab; }
+
+input.submit, .btn {
+  display: inline-block;
+  padding: 0 5px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #e54b65;
+  float: right;
+  text-decoration: none; }
+
+.btn {
+  background-color: #11a7ab;
+  float: left; }
+
+.back {
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background: url(img/back.png) center center no-repeat;
+  z-index: 10;
+  width: 60px;
+  height: 60px; }
+
+.loader {
+  background: url(img/loader.gif) center center no-repeat rgba(57, 66, 100, 0.6);
+  z-index: 500; }
+
+/*------------------------------------*\
+    $INTERFACE
+\*------------------------------------*/
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-image: url('img/logo.png');
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position:center; }
+
+.view {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  bottom: 38px;
+  left: 0; }
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #F8F8F8;
+  overflow: hidden;
+  *zoom: 1;
+  border-top: 1px solid #8A8A89; }
+  .nav a {
+    display: block;
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    /*border-right: 1px solid #8A8A89;*/ }
+  .nav a:last-child {
+    border-right: 0px solid #1f253d; }
+  .nav i {
+    margin-top: 15px; }
+
+.panel, .loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.panel-padding {
+  padding: 0 15px; }
+
+.left {
+  -webkit-transform: translate3D(-100%, 0, 0);
+  -moz-transform: translate3D(-100%, 0, 0);
+  -ms-transform: translate3D(-100%, 0, 0);
+  -o-transform: translate3D(-100%, 0, 0);
+  transform: translate3D(-100%, 0, 0); }
+
+.center {
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  -o-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0); }
+
+.right {
+  -webkit-transform: translate3D(100%, 0, 0);
+  -moz-transform: translate3D(100%, 0, 0);
+  -ms-transform: translate3D(100%, 0, 0);
+  -o-transform: translate3D(100%, 0, 0);
+  transform: translate3D(100%, 0, 0); }
+
+
+
+/*          */
+/* Services */
+/*          */
+
+div.circle {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 12px;
+  margin-bottom: 6vh;
+  border-radius: 120px;
+  position: relative;
+}
+
+span.circle-content {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border-radius: 120px;
+  display: inline-block;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #373f5b;
+  z-index: 20;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: border-width;
+  -moz-transition-property: border-width;
+  -o-transition-property: border-width;
+  transition-property: border-width;
+  -webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
+  -webkit-transform: translate3d(0px,0px,0px);
+}
+
+span.circle-content:hover, span.circle-content:focus {
+  border-width: 1px;
+}
+
+.logo_service{
+  color: #232f5b;
+  font-size: 26px;
+  position: absolute !important;
+  z-index: 1;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: -38px;
+  position: absolute;
+}
+
+
+.text_service{
+  color: #232f5b;
+  font-size: 19px;
+  width: 190px;
+  position: absolute !important;
+  margin-left: 78px;
+  top: 10px !important;
+  z-index: 1;
+}
+
+.services_text-1, 
+.services_text-2, 
+.services_text-3, 
+.services_text-4, 
+.services_text-5, 
+.services_text-6, 
+.services_text-7, 
+.services_text-8,
+.services_text-9 {
+  left: 0px !important;
+}
+
+.services_logo-1{
+  left: 50px !important;
+  top: 11px !important;
+}
+
+.services_logo-2{
+  left: 51px !important;
+  top: 13px !important;
+}
+
+.services_logo-3{
+  left: 49px !important;
+  top: 13px !important;
+}
+
+.services_logo-4{
+  left: 49px !important;
+  top: 13px !important;
+}
+
+.input-services{
+  background-color: rgba(17,35,72,0.2);
+  width: 95%;
+  margin-left: 7px;
+  margin-bottom: 10px;
+  height: 55px;
+  border: 0.5px;
+}
+
+textarea.input-services{
+  height: 175px;
+}
+
+.input-services-selector{
+  background-color: rgba(17,35,72,0.2);
+  width: 95%;
+  margin-left: 7px;
+  margin-bottom: 10px;
+  height: 55px;
+  border: 0.5px;
+}
+
+input {
+    -webkit-user-select: auto !important;
+}
+
+.logo:active{
+  -webkit-transform: scale3d(0.9, 0.9, 1);
+  /* tu use with ontouchstart="return true;" */
+}
+
+.service-title{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+
+/* Views Anim */
+
+.view-fade {
+    opacity: 1;
+}
+.view-fade.ng-enter,
+.view-fade.ng-leave {
+    /*-webkit-transform: translate3d(0px,0px,0px);*/
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    
+}
+.view-fade.ng-enter {
+    /*display:none;*/
+    opacity: 0;
+}
+
+.view-fade.ng-enter-active {
+    opacity: 1;
+}
+
+/*.view-fade.ng-enter.ng-enter-active { 
+    display:block; 
+}*/
+
+.view-fade.ng-leave {
+    opacity: 1;
+}
+.view-fade.ng-leave-active {
+    opacity: 0;
+}
+
+/* ng-hide animation */
+
+.ng-hide-add, .ng-hide-remove {
+    /* ensure visibility during the transition */
+    display: block !important; /* yes, important */
+}
+
+.cssFade {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    /*-webkit-transform: translate3d(0px,0px,0px);*/
+    opacity: 1;
+}
+.cssFade.ng-hide {
+    opacity: 0;
+}
+
+
+/* On Off Switches */
+
+input#toggle, input#toggle2 {
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+      }
+      
+      /* The following provides the "container" for our toggle in its default (off) state */
+      
+      input#toggle + label, input#toggle2 + label {
+        display: block;
+        position: relative;
+        box-shadow: inset 0 0 0px 1px #d5d5d5;
+        text-indent: -5000px;
+        height: 30px;
+        width: 50px;
+        border-radius: 15px;
+      }
+      
+      /* The following provides the green background for the "on" state of our toggle - it is hidden when the switch is off */
+      
+      input#toggle + label:before, input#toggle2 + label:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        background: rgba(17,35,72,0.5);
+        -webkit-transition: .25s ease-in-out;
+        -webkit-transform: translate3d(0px,0px,0px);
+      }
+      
+      /* The following provides the actual switch and its drop shadow */
+      
+      input#toggle + label:after, input#toggle2 + label:after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 30px;
+        width: 30px;
+        top: 0;
+        left: 0px;
+        border-radius: 15px;
+        background: white;
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,.2), 0 2px 4px rgba(0,0,0,.2);
+        -webkit-transition: .25s ease-in-out;
+        -webkit-transform: translate3d(0px,0px,0px);
+      }
+      
+      /* The following defines the "on" state for the switch */
+      
+      input#toggle:checked + label:before, input#toggle2:checked + label:before {
+        width: 50px;
+        background: rgba(17,35,72,1);
+      }
+      
+      input#toggle:checked + label:after, input#toggle2:checked + label:after {
+        left: 20px;
+        box-shadow: inset 0 0 0 1px rgba(17,35,72,1), 0 2px 4px rgba(0,0,0,.2);
+      }
