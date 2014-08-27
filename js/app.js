@@ -31,19 +31,26 @@ function showMessage(message, callback, title, buttonName) {
     title = title || "Royal Tervuren";
     buttonName = buttonName || 'OK';
 
-    if(navigator.notification && navigator.notification.alert) {
+    jembe.alert.show({
+        message:message,
+        callback: callback,
+        title:title,
+        buttons:buttonName,
+    });
 
-        navigator.notification.alert(
-            message,    // message
-            callback,   // callback
-            title,      // title
-            buttonName  // buttonName
-        );
+    // if(navigator.notification && navigator.notification.alert) {
 
-    } else {
+    //     navigator.notification.alert(
+    //         message,    // message
+    //         callback,   // callback
+    //         title,      // title
+    //         buttonName  // buttonName
+    //     );
 
-        alert(message);
-        callback();
-    }
+    // } else {
+
+    //     alert(message);
+    //     callback();
+    // }
 
 }
