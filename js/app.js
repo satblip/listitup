@@ -36,7 +36,7 @@ function showMessage(message, callback, title, buttonName) {
         navigator.notification.alert(
             message,    // message
             callback,   // callback
-            "Royal Tervuren",      // title
+            title,      // title
             buttonName  // buttonName
         );
 

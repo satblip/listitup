@@ -1,14 +1,15 @@
-<section class="panel panel-padding">
-
-  <p>Service to contact</p>
-  <select class="input-services-selector">
-      <option value="direction">Direction</option>
-      <option value="conciergerie">Conciergerie</option>
-      <option value="billing">Billing</option>
-  </select><br>
-  <p>Type your request</p>
-  <textarea class="input-services" rows="15"></textarea>
-  <button type="button" class="btn btn-default button-on-right button-contact-form" ng-click="processServiceprivateRequest()">Send</button> 
+<section class="panel panel-padding" ng-controller="ContactCtrl">
+  <form novalidate class="simple-form">
+    <p>Service to contact</p>
+    <select class="input-services-selector" ng-model="data.toContact">
+        <option value="direction">Direction</option>
+        <option value="conciergerie">Conciergerie</option>
+        <option value="billing">Billing</option>
+    </select><br>
+    <p>Type your request</p>
+    <textarea class="input-services" rows="15" ng-model="data.message"></textarea>
+    <button type="button" class="btn btn-default button-on-right button-contact-form" ng-click="send(data)">Send</button> 
+  </form>
 <!--       <div id="form_contact_confirm" style="display:none">
         <legend>Contact</legend>
         <p>Your message has been sent, we will contact you back as soon as possible!</p>

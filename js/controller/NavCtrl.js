@@ -10,7 +10,6 @@ app.controller('NavCtrl', function($scope,$rootScope,$location){
 	        break;
 	    case '/services':
 	        $scope.menu = 'services';
-	        console.log("poney2");
 	        break;
 	    case '/repairs':
 	        $scope.menu = 'repairs';

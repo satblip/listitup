@@ -16,10 +16,6 @@ app.factory('News', function($http, $q){
                     }).
                     error(function(data, status, headers, config) {
                         deferred.reject('Network Problem!!');
-                        // return [{
-                        //     "content" : "",
-                        //     "date" : "12th of january 2014"
-                        // }]
                     });
             } 
             return deferred.promise;
