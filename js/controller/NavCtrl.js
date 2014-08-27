@@ -26,10 +26,8 @@ app.controller('NavCtrl', function($scope,$rootScope,$location){
 	}
 
 	$scope.navAction = function(id){
-		console.log("poney3");
 		$scope.menu = id;
 		if(id === 'services' && $rootScope.servicesPanel != 0){
-			console.log('poney4');
 			$rootScope.servicesPanel = 0;
 		}
 		// if(id === 'services' && $rootScope.maidPanel != 0){
