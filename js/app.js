@@ -9,7 +9,7 @@ app.config(function($animateProvider) {
   $animateProvider.classNameFilter(/angular-animate/);
 })
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $httpProvider){
     $routeProvider
         .when('/news', {templateUrl: 'partials/news.html'})
         .when('/services', {templateUrl: 'partials/services.html'})
@@ -17,8 +17,9 @@ app.config(function($routeProvider){
         .when('/contact', {templateUrl: 'partials/contact.html'})
         .when('/settings', {templateUrl: 'partials/settings.html'})
         .otherwise({redirectTo: '/news'});
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    delete $httpProvider.defaults.headers.common['Content-Type'];
 });
-
 
 // app.directive('disableAnimate', function($animate) {
 //     return function($scope, $element){
