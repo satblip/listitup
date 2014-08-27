@@ -58,15 +58,15 @@
         class="panel panel-padding cssFade angular-animate"
         ng-hide="servicesPanel!=2">
         <p>Choose your service</p>
-        <select class="input-services-selector">
+        <select class="input-services-selector" ng-model="classic.service">
           <option value="post">Post service</option>
           <option value="laundry">Laundry service</option>
           <option value="sewing">Sewing service</option>
           <option value="shoe">Shoe repair</option>
         </select><br>
         <p>Type your request</p>
-        <textarea class="input-services" rows="15"></textarea>
-        <button type="button" class="btn btn-default button-on-right button-contact-form" ng-click="processServiceClassicRequest()">Send</button> 
+        <textarea class="input-services" rows="15" ng-model="classic.message"></textarea>
+        <button type="button" class="btn btn-default button-on-right button-contact-form" ng-click="processServiceClassicRequest(classic)">Send</button> 
     </section>
 
     <section
@@ -82,14 +82,14 @@
         </section>
         <section class="cssFade angular-animate" ng-show="maidPanel==1">
             <label>Date</label>
-            <input class="input-services" id='maidNewDate' size="16" type="date" placeholder="Type the date">
+            <input class="input-services" id='maidNewDate' size="16" type="date" placeholder="Type the date" ng-model="maid.newDate">
             <label>Time</label>
-            <input class="input-services" id='maidNewTime' size="16" type="time" placeholder="Type the time">
-            <button type="button" class="btn btn-default button-on-right button-maid-form" ng-click="processServiceMaidAddDate()">Send</button> 
+            <input class="input-services" id='maidNewTime' size="16" type="time" placeholder="Type the time" ng-model="maid.newTime">
+            <button type="button" class="btn btn-default button-on-right button-maid-form" ng-click="processServiceMaidAddDate(maid)">Send</button> 
         </section>
         <section class="cssFade angular-animate" ng-show="maidPanel==2">
             <label>New day</label>
-            <select class="input-services-selector" value="{{ info.maidNextDay }}" id='maidNewDay'>
+            <select class="input-services-selector" ng-model="maid.changeDay" id='maidNewDay'>
                 <option value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
                 <option value="Wednesday">Wednesday</option>
@@ -97,8 +97,8 @@
                 <option value="Friday">Friday</option>
             </select>
             <label>New time</label>
-            <input id='maidNewTime' class="input-services" value="{{ info.maidNextTime }}" size="16" type="time">
-            <button type="button" class="btn btn-default button-on-right button-maid-form" ng-click="processServiceMaidChangeDay()">Send</button> 
+            <input id='maidNewTime' class="input-services" ng-model="maid.changeTime" size="16" type="time">
+            <button type="button" class="btn btn-default button-on-right button-maid-form" ng-click="processServiceMaidChangeDay(maid)">Send</button> 
         </section>
     </section>
 

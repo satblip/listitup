@@ -61,6 +61,7 @@ app.controller('ServicesCtrl', function($scope,$rootScope,BasicInfo){
     $scope.panelServiceMaidChangeDay = function(){
         $scope.info = BasicInfo.getBasicInfo().then(function(info){
             $scope.info = info;
+            $scope.maid = {changeDay: info.maidNextDay, changeTime: info.maidNextTime};
             $rootScope.servicesPanel = 3;
             $rootScope.maidPanel  = 2;
             $scope.loader = false;
@@ -71,5 +72,17 @@ app.controller('ServicesCtrl', function($scope,$rootScope,BasicInfo){
         $rootScope.servicesPanel  = 4;
         $scope.loader = false;
     };
+
+    $scope.processServiceClassicRequest = function(data){
+        console.log(data);
+    };
+
+    $scope.processServiceMaidAddDate = function(data){
+        console.log(data);
+    };
+
+    $scope.processServiceMaidChangeDay = function(data){
+        console.log(data);
+    }
 
 });
