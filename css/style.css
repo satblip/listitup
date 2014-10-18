@@ -1,3 +1,5 @@
+@font-face { font-family: 'Harlow Solid Italic'; src: url('../fonts/harlow_solid_italic.eot'); src: url('../fonts/harlow_solid_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/harlow_solid_italic.svg#Harlow Solid Italic') format('svg'), url('../fonts/harlow_solid_italic.woff') format('woff'), url('../fonts/harlow_solid_italic.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+
 /* Satprod */
 .icon {
   background-size: 30% auto;
@@ -31,7 +33,7 @@
   bottom: -30px;
   position: absolute;
   font-size: 12px;
-  color: #000000;
+  color: rgba(124,188,66,1);
   -webkit-transform: translate3d(0px,5px,0px);
 }
 
@@ -45,7 +47,7 @@
 }
 
 .icon-my-recipes {
-  background-image: url('img/icons/icons_services@2x.png');
+  background-image: url('img/icons/sections.svg');
 }
 
 .icon-my-recipes p {
@@ -260,20 +262,22 @@ input.submit, .btn {
     $INTERFACE
 \*------------------------------------*/
 .header {
-/*  position: absolute;
-  top: 20px;
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  height: 100px;
-  max-width: 100%;
+  height: 62px;
+  min-width: 320px;
+  max-width: 360px;
   background-image: url('img/logo.png');
-  background-size: 300px;
+  background-size: 180px;
   background-repeat: no-repeat;
-  background-position:center;*/ }
+  background-position: center; 
+}
 
 .view {
   position: absolute;
-  top: 10px;
+  top: 62px;
   right: 0;
   bottom: 38px;
   left: 0;
@@ -310,6 +314,12 @@ input.submit, .btn {
     border-right: 0px solid #1f253d; }
   .nav i {
     margin-top: 15px; }
+  .nav i.icon-my-recipes{
+    margin-top: 22px;
+  }
+  .nav p.right{
+    bottom: -23px;
+  }
 
 .panel
 {
@@ -361,15 +371,16 @@ input.submit, .btn {
 
 .y-card{
   font-size: 14px;
-line-height: 20px;
-display: inline-block;
-margin: 10px;
-position: relative;
-text-align: left;
-text-decoration: none;
-vertical-align: top;
-width: 310px;
-background-color: #ffffff;
+  line-height: 20px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+  width: 310px;
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 
 a.y-image{
@@ -381,26 +392,29 @@ overflow: hidden;
 
 a.y-image > img{
   height: auto;
-opacity: 1;
--ms-filter: none;
-filter: none;
-width: 100%;
--webkit-transition: opacity 200ms ease-in-out;
--moz-transition: opacity 200ms ease-in-out;
--o-transition: opacity 200ms ease-in-out;
--ms-transition: opacity 200ms ease-in-out;
-transition: opacity 200ms ease-in-out;
+  opacity: 1;
+  max-height: 310px;
+  -ms-filter: none;
+  filter: none;
+  width: 100%;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .y-card .y-title{
-  background-color: #383838;
+  background-color: #7CBC44;
 padding: 10px;
 }
 
 .y-card .y-title > div a h3 {
   color: #fff;
 display: inline;
-font-size: 18px;
+font-family: 'Harlow Solid Italic';
+font-size: 22px;
+/*font-weight: 100;*/
 line-height: 22px;
 position: relative;
 }
@@ -444,11 +458,11 @@ overflow: hidden;
 font-size: 11px;
 border-top: 1px solid #eee;
 padding: 5px 10px;
-text-align: right;
+text-align: center;
 }
 
 .y-icon {
-  color: #db8a1f;
+  color: rgba(124,188,66,1);
 display: inline-block;
 font-family: 'y-icon';
 font-style: normal;
@@ -465,6 +479,12 @@ font-weight: normal;
   width: 330px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.recipe-main-title{
+  color: #ffffff;
+  font-family: 'Harlow Solid Italic';
+  text-align: center;
 }
 
 /*          */
@@ -688,7 +708,7 @@ background-position: center bottom,center center;
 -webkit-background-size: 100% 100%,cover;
 -moz-background-size: 100% 100%,cover;
 background-size: 100% 100%,cover;
-height: 360px;
+height: 260px;
 position: relative;
 top: auto;
 right: auto;
@@ -698,58 +718,145 @@ text-align: center;
 }
 
 #main >.image-wrapper .image [itemprop=image] {
-height: 0;
-position: absolute;
-top: 0;
-right: 0;
-bottom: auto;
-left: auto;
-width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  width: 0;
 }
 
 #main .primary {
-color: #eee;
-font-size: 13px;
-line-height: 18px;
-position: absolute;
-top: auto;
-right: auto;
-bottom: 30px;
-left: 50%;
-margin-left: -450px;
-width: 900px;
-text-align: left;
-width: 90%;
+  color: #eee;
+  font-size: 13px;
+  line-height: 18px;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -450px;
+  width: 900px;
+  text-align: left;
+  width: 90%;
 }
 
 #main .primary h1 {
-font-size: 28px;
-line-height: 32px;
-max-height: 132px;
-overflow: hidden;
-width: 75%;
+  font-size: 28px;
+  line-height: 32px;
+  max-height: 132px;
+  overflow: hidden;
+  width: 75%;
 }
 
 #main .primary .attribution {
-color: #eee;
-font-size: 11px;
-line-height: 15px;
-line-height: 31px;
+  color: #eee;
+  font-size: 11px;
+  line-height: 15px;
+  line-height: 31px;
 }
 
 .modifiers {
-height: 120px;
-padding-bottom: 40px;
+  height: 120px;
+  padding-bottom: 40px;
 }
 
 .flex-box, .small .image-wrapper .image {
-width: 94%;
+width: 100%;
 }
 
 .modifiers-wrapper {
-background-color: #f5f5f5;
-background-repeat: repeat;
-background-image: url("../img/texture/bg-noise.png");
+  margin-top: -20px;
+  padding: 10px;
+  border-radius: 13px;
+  background-color: #7CBC44;
+  background-repeat: repeat;
+  background-image: url("../img/texture/bg-noise.png");
+}
+
+.modifiers .recipe-data {
+  width: 100%;
+}
+
+.modifiers .recipe-data li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 33%;
+}
+
+.modifiers .recipe-data li .hd {
+  margin-top: 24px;
+}
+
+.modifiers .recipe-data li .bd {
+  font-family: "Helvetica Neue","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 2.8em;
+}
+
+.modifiers .recipe-data li .ft {
+  display: block;
+  font-family: Raleway,"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: .9em;
+  color: #ffffff;
+  line-height: 2;
+  margin-top: -10px;
+}
+
+.middlenote{
+  color: rgba(124,188,66,1) !important;
+  font-size: 1.9em !important;
+  margin-top: -63px !important;
+}
+
+.buttonless{
+  display: inline !important;
+  height: 80px;
+  width: 80px;
+  margin-right: 24px;
+}
+
+.buttonreturn{
+  display: inline;
+  font-family: 'Harlow Solid Italic';
+  color: rgba(124,188,66,1);
+  font-size: 40px;
+}
+
+.buttonreturn p{
+  color: rgba(124,188,66,1);
+}
+
+.buttonmore{
+  display: inline !important;
+  height: 80px;
+  width: 80px;
+}
+
+.blockoftheblock{
+  display: block;
+}
+
+.buttonunder{
+  display: block;
+  padding-left: 25%;
+}
+
+.buttonsserving{
+  width: 100%;
+  text-align: center;
+
+}
+
+.heart{
+  width: 87px;
 }
 
 /* On Off Switches */

@@ -1,31 +1,25 @@
 <section class="panel panel-padding" ng-controller="OneRecipesCtrl">
   <div id="main" class="paper large">
     <div class="image-wrapper">
-          <div class="image" style="background-image:url('http://fastly-static.yummly.com/yummly-website/205f7a42372d4b54429895f4e141a7a9ecf9bcad/img/recipe-page-gradient.png'),url('./data/recipes_images/2.jpg');">
-            <img itemprop="image" src="./data/recipes_images/2.jpg" height="487" width="730" alt="Walnut Maple Pie">
-            <div class="primary">
-              <h1 itemprop="name" title="Walnut Maple Pie">Walnut Maple Pie</h1>
-            </div>
+          <div class="image" style="background-image:url('http://fastly-static.yummly.com/yummly-website/205f7a42372d4b54429895f4e141a7a9ecf9bcad/img/recipe-page-gradient.png'),url('./data/recipes_images/{{recipes.picture}}');">
           </div>
         </div>
 
         <div class="secondary">
           <div class="modifiers-wrapper">
             <div class="modifiers flex-box">
+            <h2 class="recipe-main-title">{{recipes.name}}</h2>
               <ul class="recipe-data">
                 <li>
-                  <span class="hd">Ingredients</span>
-                  <span class="bd">11</span>
-                  <span class="ft">Count</span>
+                  <span class="bd">{{recipes.ingredients.length}}</span>
+                  <span class="ft">Ingredients</span>
                 </li>
                 <li>
-                  <span class="hd">Nutrition</span>
-                  <span class="bd">500</span>
-                  <span class="ft">Calories</span>
+                  <span class="bd"><img src="./css/img/icons/love1.svg" alt="heart" class="heart"></span>
+                  <span class="ft middlenote">{{recipes.healthnote}}</span>
                 </li>
                 <li>
-                  <span class="hd">Directions</span>
-                  <span class="bd">90</span>
+                  <span class="bd">{{recipes.prep_time + recipes.cook_time }}</span>
                   <span class="ft">Minutes</span>
                 </li>
               </ul>
@@ -45,13 +39,19 @@
           </div>
 
           <div class="yummly-recipe-ingredients flex-box">
-            <p class="yield visuallyhidden" itemprop="recipeYield">8 servings</p>
-                  <form id="servings" novalidate="">
-                    <label>servings<input autocapitalize="off" autocorrect="off" type="tel" name="servings" value="8" id="servings-text"></label>
-                    <button id="newServings" class="btn-wire" disabled=""><span class="y-icon">)</span></button>
-                    <input type="hidden" name="unitType" value="imperial">
-                  </form>
-            <h3>Ingredients</h3><div class="units">
+            <div class="buttonsserving blockoftheblock">
+            <div class="buttonreturn"><p class="yield visuallyhidden">8 servings</p></div>
+            <div class="buttonunder">
+
+              <button type="button" class="btn btn-default btn-xs buttonless"><img src="./css/img/icons/neg.svg" alt="" class="negsign"></button>
+              <button type="button" class="btn btn-default btn-xs buttonmore"><img src="./css/img/icons/sum.svg" alt="" class="plusign"></button></div>
+              
+            </div>
+            <div>
+            <br />
+            <h3>Ingredients</h3>
+            </div>
+            <div class="units">
               <span class="visuallyhidden">imperial units</span>
                   
                         <span class="unit-select">us</span>

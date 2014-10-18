@@ -33,7 +33,7 @@ app.controller('OneRecipesCtrl', function($scope,$rootScope,$routeParams,Recipes
 
     $scope.loading = true;
     $scope.recipes = Recipes.getRecipes().then(function(recipes){
-        $scope.recipes = recipes;
+        $scope.recipes = recipes[$routeParams.id];
         $scope.loading = false;
     }, function(msg){
         $scope.recipes = [{

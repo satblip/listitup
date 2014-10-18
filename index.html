@@ -9,6 +9,7 @@
     </head>
     <body>
         <header class="header">
+            <!-- <img src="./css/img/logo.png" alt="" class="mainlogo"> -->
         </header>
 
         <section class="view view-fade angular-animate" ng-view>
@@ -16,7 +17,7 @@
 
         <nav class="nav" ng-controller="NavCtrl">
             <a href="#recipes" ng-click="navAction('recipes')"><i class="icon icon-recipes" ng-class="{iconactive: menu=='recipes'}" disableAnimate><p>All recipes</p></i></a>
-            <a href="#my-recipes" ng-click="navAction('my-recipes')"><i class="icon icon-my-recipes" ng-class="{iconactive: menu=='my-recipes'}" disableAnimate><p>My recipes</p></i></a>
+            <a href="#my-recipes" ng-click="navAction('my-recipes')"><i class="icon icon-my-recipes" ng-class="{iconactive: menu=='my-recipes'}" disableAnimate><p class="right">My recipes</p></i></a>
         </nav>
 
         <script type="text/javascript" src="jembe.js"></script>
