@@ -1,0 +1,56 @@
+<section class="panel panel-padding" ng-controller="RecipesCtrl">
+
+	<div ng-show="loading">Loading ...</div>
+
+<div id="cards">
+	<div class="y-card" ng-repeat="one_recipe in recipes">
+    <a class="y-image" href="#one-recipe/{{ $index }}">
+        <img src="./data/recipes_images/{{one_recipe.picture}}" alt="{{one_recipe.name}}">
+    </a>
+        <div class="y-title">
+          <div>
+            <a class="y-full" href="#one-recipe/{{ $index }}">
+              <h3>{{one_recipe.name}}</h3>
+            </a>
+                  <div class="star-rating y-rating"> 
+			  <span class="glyphicon glyphicon-star" data-rating="1"></span>
+			  <span class="glyphicon glyphicon-star" data-rating="2"></span>
+			  <span class="glyphicon glyphicon-star" data-rating="3"></span>
+			  <span class="glyphicon glyphicon-star" data-rating="4"></span>
+			  <span class="glyphicon glyphicon-star-empty" data-rating="5"></span>
+			  <input type="hidden" name="whatever" class="rating-value" value="{{one_recipe.rating}}">
+			</div>
+          </div>
+        </div>
+    <!-- <div class="y-ingredients">
+      <p>
+      {{one_recipe.ingredients[0].title}}, {{one_recipe.ingredients[1].title}}, , ...
+      </p>
+    </div> -->
+<!--     <div class="y-meta">
+      <span class="y-source tiny">
+        <a href="#" title="Simply Recipes"><img height="12" src="//static.yummly.com/favicon/Simply%20Recipes%3A%20Recipes%20Only.2011-09-07.ico" width="12">Simply Recipes</a>
+        </span>
+    
+      <div class="star-rating y-rating"> 
+			  <span class="glyphicon glyphicon-star" data-rating="1"></span>
+			  <span class="glyphicon glyphicon-star" data-rating="2"></span>
+			  <span class="glyphicon glyphicon-star" data-rating="3"></span>
+			  <span class="glyphicon glyphicon-star" data-rating="4"></span>
+			  <span class="glyphicon glyphicon-star-empty" data-rating="5"></span>
+			  <input type="hidden" name="whatever" class="rating-value" value="{{one_recipe.rating}}">
+			</div>
+    </span>
+    </div> -->
+      <div class="aspect-bar">
+        <span class="aspect-icon"><span class="glyphicon glyphicon-time y-icon"></span></span>
+        <span class="aspect-text">
+            <span class="numbers">Work: {{ one_recipe.prep_time }} mins | Cook: {{ one_recipe.cook_time }}</span> mins, 
+            <span class="numbers">{{ one_recipe.ingredients.length }}</span> ingredients
+        </span>
+      </div>
+  </div>
+</div>
+ 
+
+</section>

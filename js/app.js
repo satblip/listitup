@@ -11,12 +11,12 @@ app.config(function($animateProvider) {
 
 app.config(function($routeProvider, $httpProvider){
     $routeProvider
-        .when('/news', {templateUrl: 'partials/news.html'})
-        .when('/services', {templateUrl: 'partials/services.html'})
-        .when('/repairs', {templateUrl: 'partials/repairs.html'})
-        .when('/contact', {templateUrl: 'partials/contact.html'})
-        .when('/settings', {templateUrl: 'partials/settings.html'})
-        .otherwise({redirectTo: '/news'});
+        .when('/recipes', {templateUrl: 'partials/recipes.html'})
+        .when('/my-recipes', {templateUrl: 'partials/my-recipes.html'})
+        .when('/one-recipe/:id', {templateUrl: 'partials/one-recipe.html'})
+        .when('/filters', {templateUrl: 'partials/filters.html'})
+        // .when('/settings', {templateUrl: 'partials/settings.html'})
+        .otherwise({redirectTo: '/recipes'});
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
     delete $httpProvider.defaults.headers.common['Content-Type'];
 });

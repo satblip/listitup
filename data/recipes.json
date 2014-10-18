@@ -1,0 +1,131 @@
+[{
+        "name" : "Pumpkin Turkey Chili",
+        "description" : "Absolutely delicious. I know it doesn't sound appetizing, but it's unbelievable how tasty it is, and so easy too!",
+        "picture" : "1.jpg",
+        "rating" : "4",
+        "ingredients" : [ 
+                            { 
+                                "quantity":"1 tablespoon",
+                                "title" : "vegetable oil" 
+                            },{ 
+                                "quantity":"1 cup",
+                                "title" : "chopped onion" 
+                            },{ 
+                                "quantity":"1/2 cup",
+                                "title" : "chopped green bell pepper" 
+                            },{ 
+                                "quantity":"1/2 cup",
+                                "title" : "chopped yellow bell pepper" 
+                            },{ 
+                                "quantity":"1 clove",
+                                "title" : "garlic" 
+                            },{ 
+                                "quantity":"1 Kg",
+                                "title" : "ground turkey" 
+                            },{ 
+                                "quantity":"200gr",
+                                "title" : "can diced tomatoes" 
+                            }
+                        ],
+        "recipe" : "Heat the oil in a large skillet over medium heat, and saute the onion, green bell pepper, yellow bell pepper, and garlic until tender. Stir in the turkey, and cook until evenly brown. Drain, and mix in tomatoes and pumpkin. Season with chili powder, pepper, and salt. Reduce heat to low, cover, and simmer 20 minutes. Serve topped with Cheddar cheese and sour cream.",
+        "prep_time" : "10",
+        "cook_time" : "20"
+    },{
+        "name" : "Grilled Cheese Sandwich",
+        "description" : "A grilled cheese sandwich is a simple dish consisting of two slices of bread with cheese between them grilled.",
+        "picture" : "3.jpg",
+        "rating" : "",
+        "difficulty" : "1",
+        "ingredients" : [ 
+                            { 
+                                "quantity":"3 slices",
+                                "title" : "cheese" 
+                            },{ 
+                                "quantity":"2 slices",
+                                "title" : "bread" 
+                            },{ 
+                                "quantity":"1",
+                                "title" : "butter" 
+                            }
+                        ],
+        "recipe" : "Take two slices of bread and butter them on both sides (or spread margarine or a similar substitute). Place the double-buttered slices into the toaster and toast until the bread is browned. Remove the two hot, crispy slices of toast from the toaster and place a slice of cheese between them. The cheese melts quickly. Cut and serve immediately. If desired, place the entire sandwich back into one slot of the toaster to melt the cheese even further. Buttering the bread makes the outside of the bread brown, rather than dry and burn, and is widely recommended.",
+        "categories" : [ {"category" : "Main"}
+                       ],
+        "prep_time" : "5",
+        "cook_time" : "5"
+  
+  },{
+
+    "name" : "Wild Spinach and Lemon Salad",
+    "description" : "5 minutes to prepare, a feast for the eyes and a surprise for the tongue.",
+    "picture" : "2.jpg",
+    "rating" : "",
+    "difficulty" : "3",
+        "ingredients" : [ 
+                            { 
+                                "quantity":"1",
+                                "title" : "spinach" 
+                            },{ 
+                                "quantity":"1",
+                                "title" : "lemon" 
+                            },{ 
+                                "quantity":"1",
+                                "title" : "olive oil" 
+                            }
+                        ],
+        "recipe" : "Clean the spinach leaves and remove stems. Poach leaves in boiling water for 2-3 minutes. Rinse in cold water. Wash lemon thoroughly. Slice lemon paper-thin with sharp knife. Sprinkle with coarse ground black pepper, salt and sumak.",
+
+        "categories" : [ {"category" : "Salad"},
+                         {"category" : "Mediterranean"}
+                       ],
+        "prep_time" : "5",
+        "cook_time" : "5"
+ 
+  }, {
+        "name" : "French Toast",
+        "description" : "French toast is a common breakfast item made by frying a piece of bread soaked in an egg batter. French toast was developed as a way to use day-old stale bread. When lacking stale bread, toasting your bread lightly will help it absorb more of the egg and milk batter. French toast is usually served with toppings similar to those used for pancakes, waffles, and toast.",
+        "picture" : "4.jpg",
+        "rating" : "",
+        "difficulty" : "1",
+        "ingredients" : [ 
+                            { 
+                                "quantity":"1",
+                                "title" : "egg" 
+                            },{ 
+                                "quantity":"2 slices",
+                                "title" : "bread" 
+                            },{ 
+                                "quantity":"60 ml",
+                                "title" : "milk" 
+                            }
+                        ],
+        "recipe" : "In a bowl, mix eggs and milk, and optional ingredients. Heat up a frying pan to medium-low heat. Soak a slice of bread in the egg-milk mixture and place on pan; repeat until pan is full or desired amount is placed. Brown both sides bread. Serve on plates, usually two slices per person, with toppings as desired.",
+        "categories" : [ {"category" : "Breakfast"}
+                       ],
+        "prep_time" : "5",
+        "cook_time" : "5"
+
+  } , {
+        "name" : "Rice and Lentils (Mejadra)",
+        "description" : "Extremely simple to cook, this dish is a fundamental component of Middle Eastern cuisine. It provides carbohydrates, proteins, and a full stomach. It also tastes great. When cooked with rice, this recipe is gluten-free. It isn't gluten free when cooked with bulgur (wheat).",
+        "picture" : "5.jpg",
+        "rating" : "2",
+        "difficulty" : "2",
+        "ingredients" : [ 
+                            { 
+                                "quantity":"1 cup",
+                                "title" : "rice or bulgur (uncooked)" 
+                            },{ 
+                                "quantity":"1 cup",
+                                "title" : "lentils (dry)" 
+                            },{ 
+                                "quantity":"1",
+                                "title" : "onion" 
+                            }
+                        ],
+        "recipe" : "Fry the lentils in oil for 3-4 minutes, stirring continuously, until the first beans show signs of scorching. Add salt and spices Add 2 cups water and cover. Bring to a boil, lower to a simmer. Cook for 20 minutes or until all the water is absorbed by the lentils. Fry the rice in oil for 3-4 minutes, stirring continuously, until the grains change colour. Add 2 cups water and cover. Bring to a boil, lower to a simmer. After 5 minutes turn the heat off, and leave standing for another 10 minutes. Cut the onion into thin strips. Fry the onion in mixed olive oil until crisp and translucent. Mix lentils and rice, top with the fried onion.",
+        "categories" : [ {"category" : "Palestinian"}],
+        "prep_time" : "20",
+        "cook_time" : "10"
+    
+}]

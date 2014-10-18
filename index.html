@@ -5,7 +5,7 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <title>Royal Tervuren</title>
+        <title>List it up</title>
     </head>
     <body>
         <header class="header">
@@ -15,11 +15,8 @@
         </section>
 
         <nav class="nav" ng-controller="NavCtrl">
-            <a href="#news" ng-click="navAction('news')"><i class="icon icon-news" ng-class="{iconactive: menu=='news'}" disableAnimate><p>News</p></i></a>
-            <a href="#services" ng-click="navAction('services')"><i class="icon icon-services" ng-class="{iconactive: menu=='services'}" disableAnimate><p>Services</p></i></a>
-            <a href="#repairs" ng-click="navAction('repairs')"><i class="icon icon-repairs" ng-class="{iconactive: menu=='repairs'}" disableAnimate><p>Repairs</p></i></a>
-            <a href="#contact" ng-click="navAction('contact')"><i class="icon icon-contact" ng-class="{iconactive: menu=='contact'}" disableAnimate><p>Contact</p></i></a>
-            <a href="#settings" ng-click="navAction('settings')"><i class="icon icon-settings" ng-class="{iconactive: menu=='settings'}" disableAnimate><p>Settings</p></i></a>
+            <a href="#recipes" ng-click="navAction('recipes')"><i class="icon icon-recipes" ng-class="{iconactive: menu=='recipes'}" disableAnimate><p>All recipes</p></i></a>
+            <a href="#my-recipes" ng-click="navAction('my-recipes')"><i class="icon icon-my-recipes" ng-class="{iconactive: menu=='my-recipes'}" disableAnimate><p>My recipes</p></i></a>
         </nav>
 
         <script type="text/javascript" src="jembe.js"></script>
@@ -27,9 +24,9 @@
         <script src="js/angular-animate.min.js"></script>
         <script src="js/angular-route.min.js"></script>
         <script src="js/app.js"></script>
-        <script src="js/controller/ServicesCtrl.js"></script>
-        <script src="js/controller/ContactCtrl.js"></script>
+        <script src="js/controller/OneRecipesCtrl.js"></script>
+        <script src="js/controller/FiltersCtrl.js"></script>
         <script src="js/controller/NavCtrl.js"></script>
-        <script src="js/controller/NewsCtrl.js"></script>
+        <script src="js/controller/RecipesCtrl.js"></script>
     </body>
 </html>

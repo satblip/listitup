@@ -5,20 +5,11 @@ app.controller('NavCtrl', function($scope,$rootScope,$location){
 	console.log("poney");
 
     switch($location.path()) {
-	    case '/news':
-	        $scope.menu = 'news';
+	    case '/recipes':
+	        $scope.menu = 'recipes';
 	        break;
-	    case '/services':
-	        $scope.menu = 'services';
-	        break;
-	    case '/repairs':
-	        $scope.menu = 'repairs';
-	        break;
-	    case '/contact':
-	        $scope.menu = 'contact';
-	        break;
-	    case '/settings':
-	        $scope.menu = 'settings';
+	    case '/my-recipes':
+	        $scope.menu = 'my-recipes';
 	        break;
 	    default:
 	        $scope.menu = 'news';
